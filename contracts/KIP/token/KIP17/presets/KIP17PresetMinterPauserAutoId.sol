@@ -8,7 +8,7 @@ pragma solidity ^0.8.0;
 import "../../../../utils/Context.sol";
 import "../../../../access/AccessControlEnumerable.sol";
 import "../extensions/KIP17Enumerable.sol";
-import "../extensions/KIP17Mintable.sol";
+import "../extensions/KIP17MetadataMintable.sol";
 import "../extensions/KIP17Burnable.sol";
 import "../extensions/KIP17Pausable.sol";
 import "../../../../utils/Counters.sol";
@@ -33,7 +33,7 @@ contract KIP17PresetMinterPauserAutoId is
     AccessControlEnumerable,
     KIP17Pausable,
     KIP17Enumerable,
-    KIP17Mintable,
+    KIP17MetadataMintable,
     KIP17Burnable
 {
     using Counters for Counters.Counter;
